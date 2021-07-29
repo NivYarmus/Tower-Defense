@@ -1,0 +1,22 @@
+server side messages:
+GAME - send game object
+
+client side messages:
+DART - place down a dart monkey
+BOMB - place down a bomb tower
+LIVE - client is still up
+QUIT - client wants to quit the game
+
+protocol:
+client constantly sends (LIVE) and server replies (GAME)
+
+if client sends (DART) the server will send an update version of (GAME) with the dart monkey
+if client sends (BOMB) the server will send an update version of (GAME) with the bomb tower
+
+if the client wants to end the game he will send (LIVE) the server will close the connection
+
+client message:
+[message length - 8 bytes][protocol type - 4 bytes][additional data: x, y tuple or empty]
+
+server message:
+[message length - 8 bytes][tuple of game objects]
