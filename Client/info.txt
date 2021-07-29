@@ -25,7 +25,7 @@ client constantly sends (LIVE) and server replies (GAME)
 if client sends (DART) the server will send an update version of (GAME) with the dart monkey
 if client sends (BOMB) the server will send an update version of (GAME) with the bomb tower
 
-if the client wants to end the game he will send (LIVE) the server will close the connection
+if the client wants to end the game he will send (QUIT) the server will close the connection
 
 client message:
 [message length - 8 bytes][protocol type - 4 bytes][additional data: x, y tuple or empty]
