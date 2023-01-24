@@ -1,4 +1,4 @@
-# Tower-Defense-in-Python3
+# Tower-Defense
 I programmed a Tower Defense game in the programming language Python3 as my 11th grade final project.
 The game is an online 1v1 game, the game sets you up against another random player.
 Each player has the play the game as if it a solo game, each player defends his base from the waves of enemies using soldiers he buys.
